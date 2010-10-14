@@ -1,3 +1,9 @@
+perusal (0.2.1-1) testing; urgency=low
+
+  * CSRF token.
+
+ -- Sam Morrison <sam@vpac.org>  Thu, 14 Oct 2010 14:45:14 +1100
+
 perusal (0.2-1) testing; urgency=low
 
   * Style changes

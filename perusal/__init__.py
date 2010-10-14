@@ -16,7 +16,7 @@
 # along with Perusal.  If not, see <http://www.gnu.org/licenses/>.
 
 
-VERSION = (0, 2, '', 'final', 0)
+VERSION = (0, 2, 1, 'final', 0)
 
 def get_version():
     """ Return the current version"""
