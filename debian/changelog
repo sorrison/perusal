@@ -1,3 +1,9 @@
+perusal (0.2.3-1) testing; urgency=low
+
+  * Captcha urls
+
+ -- Sam Morrison <sam@vpac.org>  Thu, 14 Oct 2010 16:58:42 +1100
+
 perusal (0.2.2-1) testing; urgency=low
 
   * Bug fix
