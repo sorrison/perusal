@@ -81,6 +81,12 @@ for dirpath, dirnames, filenames in os.walk('media'):
     if filenames:
         data_files.append([dirpath.replace('media', '/usr/share/perusal/media'), [os.path.join(dirpath, f) for f in filenames]])
 
+for dirpath, dirnames, filenames in os.walk('templates'):
+    for i, dirname in enumerate(dirnames):
+        if dirname.startswith('.'): del dirnames[i]
+    if filenames:
+        data_files.append([dirpath.replace('templates', '/usr/share/perusal/templates'), [os.path.join(dirpath, f) for f in filenames]])
+
 
 data_files.append(('/usr/sbin', ['sbin/perusal-admin', ]))
 
