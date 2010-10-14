@@ -1,0 +1,14 @@
+Source: perusal
+Section: python
+Priority: optional
+Maintainer: Sam Morrison <sam@vpac.org>
+Build-Depends: debhelper (>=7.0.0), python (>= 2.4), python-support (>= 0.6), cdbs (>= 0.4.49)
+Standards-Version: 3.8.4.0
+
+Package: perusal
+Architecture: all
+Homepage: http://trac.vpac.org/perusal/
+Depends: ${misc:Depends}, ${python:Depends}, python, python-django (>= 1.2.1), django-andsome (>= 1.1.5), django-surveys (>= 1.0.4), python-django-south (>= 0.7), django-simple-captcha
+Description: Survey generation app
+ Create custom surveys with this Django based web app.
+
