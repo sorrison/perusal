@@ -1,0 +1,17 @@
+{% extends "forms.html" %}
+{% load forms common %}
+
+{% block title %}{{ survey.survey_group }}{% endblock %}
+{% block content_title %}{{ survey.survey_group }}{% endblock %}
+
+{% block content %}
+<form method="post" action="">
+  <fieldset class="module aligned ()">
+    {{ form.non_field_errors }}
+    {% form_as_div form %}
+  </fieldset>
+  <div class="submit-row">
+    <input type="submit" value="Submit" class="default" />
+  </div>
+</form>
+{% endblock %}
