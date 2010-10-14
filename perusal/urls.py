@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', name='logout'),
 
+    url(r'^captcha/', include('captcha.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^(?P<survey_slug>[-.\w]+)/$', 'perusal.views.survey', name='survey'),
 )
