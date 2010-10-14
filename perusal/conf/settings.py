@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'south',
+    'captcha',
     'andsome.layout',
     'andsome',
     'django_surveys',
