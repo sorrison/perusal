@@ -1,0 +1,3 @@
+Put custom template files in here. Eg Survey group named "Test Survey" will loook for a template called test-survey.html
+
+If none exists then it will use a generic template.
