@@ -8,7 +8,9 @@
 <form method="post" action="">
   <fieldset class="module aligned ()">
     {{ form.non_field_errors }}
+    {% block questions %}
     {% form_as_div form %}
+    {% endblock %}
   </fieldset>
   <div class="submit-row">
     <input type="submit" value="Submit" class="default" />

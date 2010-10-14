@@ -52,7 +52,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'perusal.urls'
 
 TEMPLATE_DIRS = (
-    '/etc/perusal/templates'
+    '/etc/perusal/templates',
+    '/usr/share/perusal/templates',
 )
 
 INSTALLED_APPS = (
