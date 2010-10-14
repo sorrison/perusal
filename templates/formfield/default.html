@@ -1,0 +1,7 @@
+{% autoescape off %}
+<div class="form-row {% if formfield.errors %}errors{% endif %}" >
+{% if formfield.errors %}{{ formfield.errors }}{% endif %}
+<p for="{{ formfield.auto_id }}"{{ class }}>{{ formfield.label }}:</p>{{ formfield }}
+{% if formfield.help_text %}<p class="help">{{ formfield.help_text }}</p>{% endif %}
+</div>
+{% endautoescape %}
